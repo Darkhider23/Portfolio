@@ -1,4 +1,4 @@
-// WorkAddForm.js
+
 import React, { useState } from "react";
 import axios from "axios";
 import refreshWorks from "../../workUtils";
@@ -23,11 +23,11 @@ const WorkAddForm = ({ closeModal }) => {
     e.preventDefault();
     try {
       await axios.post("http://localhost:3001/works", formData);
-      closeModal(); // Close the modal when the work is added
+      closeModal();
       setTimeout(async () => {
         const refreshedWorks = await refreshWorks();
       
-      }, 1000); // Adjust the delay as needed
+      }, 1000);
     } catch (error) {
       console.error("Error adding work:", error);
     }
@@ -52,7 +52,7 @@ const WorkAddForm = ({ closeModal }) => {
 
   return (
     <form className="add-form" onSubmit={handleSubmit}>
-      {/* Form fields */}
+      
       <div className="form-row">
         <div className="input-data">
           <input
