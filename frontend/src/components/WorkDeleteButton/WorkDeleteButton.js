@@ -5,7 +5,7 @@ const WorkDeleteButton = ({ workId, refreshWorks }) => {
   const handleDelete = async () => {
     try {
       await axios.delete(`http://localhost:3001/works/${workId}`);
-      // Ensure that refreshWorks is a function before calling it
+    
       if (typeof refreshWorks === 'function') {
         refreshWorks();
       }
