@@ -12,7 +12,7 @@ body {
   align-items: center;
   gap: 1rem;
   background: linear-gradient(115deg, #56d8e4 10%, #9f01ea 90%);
-  min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+  min-height: 100vh;
 }
 .work-list {
   max-width: 1200px;
@@ -31,7 +31,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Adjust the value based on your needs */
+  z-index: 1000;
 }
 
 .modal {
