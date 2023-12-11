@@ -1,4 +1,4 @@
-// Card.js
+
 import React, { useState } from "react";
 import axios from "axios";
 import Modal from "react-modal";
@@ -71,13 +71,12 @@ const Card = ({ work, onDelete }) => {
 
   const handleSaveChanges = async () => {
     try {
-      // Perform the save operation using axios or your preferred method
+  
       await axios.put(`http://localhost:3001/works/${_id}`, {
         title: editedTitle,
         description: editedDescription,
         customerLink: editedLink,
       });
-      // Refresh the works after saving changes
       await refreshWorks();
       closeModal();
     } catch (error) {
