@@ -1,4 +1,4 @@
-// work.module.ts
+
 import { Module } from '@nestjs/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Work, WorkSchema } from './work.model';
