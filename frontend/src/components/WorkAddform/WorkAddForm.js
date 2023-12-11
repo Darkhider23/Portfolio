@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import refreshWorks from "../../workUtils";
-import "./WorkAddForm.css"; // Import your CSS file for styling
+import "./WorkAddForm.css";
 import ImageUploadForm from "../ImageUpload/ImageUpload";
 
 const WorkAddForm = ({ closeModal }) => {
