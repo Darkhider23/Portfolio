@@ -41,7 +41,7 @@ const WorkEditForm = ({ workId, refreshWorks }) => {
     <form onSubmit={handleSubmit}>
       <label>Title:</label>
       <input type="text" name="title" value={formData.title} onChange={handleChange} required />
-      {/* Add other form fields for description, image, customerLink, and hidden here */}
+      
       <button type="submit">Modify Work</button>
     </form>
   );
