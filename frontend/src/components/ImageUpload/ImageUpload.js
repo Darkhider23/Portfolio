@@ -42,7 +42,7 @@ const ImageUploadForm = ({ onUpload, onUploadSuccess, title }) => {
         id="fileInput"
         accept="image/*"
         onChange={handleFileChange}
-        multiple // Allow multiple file selection
+        multiple 
       />
       <button className="upload-btn" onClick={handleUpload}>
         Upload
